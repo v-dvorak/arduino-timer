@@ -18,6 +18,8 @@ Initialisation function, must be called before anything else.
 unsigned long Get(void);
 ```
 
+Read current time.
+
 ### Reset
 
 ```cpp
@@ -37,9 +39,9 @@ unsigned long lastReading;
 
 int main(void)
 {
-	// setup timer
-	timer.Init();
-	unsigned long lastReading = 0;
+    // setup timer
+    timer.Init();
+    unsigned long lastReading = 0;
     unsigned long currentTime = 0;
     // enable interrupts
 	sei();
